@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ski People</title>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a
+            href="/"
+            title="Переход на главную страницу"
+            class="header__logo-link"
+            aria-label="Переход на главную страницу"
+          >
+            <img src="/img/logo.svg" alt="" class="header__logo-image" />
+          </a>
+
+          <form action="#" class="header__search">
+            <input type="search" name="search" class="header__search-input" />
+            <button type="submit" class="header__search-button">
+              <svg
+                width="16.000000"
+                height="16.000000"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs />
+                <rect
+                  id="vuesax/linear/search-normal"
+                  rx="0.000000"
+                  width="15.000000"
+                  height="15.000000"
+                  transform="translate(0.500000 0.500000)"
+                  fill="#FFFFFF"
+                  fill-opacity="0"
+                />
+                <path
+                  id="Vector"
+                  d="M7.66 14C4.16 14 1.33 11.16 1.33 7.66C1.33 4.16 4.16 1.33 7.66 1.33C11.16 1.33 14 4.16 14 7.66C14 11.16 11.16 14 7.66 14Z"
+                  stroke="#1C1C1C"
+                  stroke-opacity="1.000000"
+                  stroke-width="1.500000"
+                  stroke-linejoin="round"
+                />
+                <path
+                  id="Vector"
+                  d="M14.66 14.66L13.33 13.33"
+                  stroke="#1C1C1C"
+                  stroke-opacity="1.000000"
+                  stroke-width="1.500000"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                />
+                <g opacity="0.000000" />
+              </svg>
+            </button>
+          </form>
+
+          <div class="header__links-list">
+            <a href="/favorite" class="header__link"
+              ><span class="header__link-text">Избранное</span
+              ><svg
+                width="16.000000"
+                height="16.000000"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs />
+                <rect
+                  id="vuesax/linear/heart"
+                  rx="0.000000"
+                  width="15.000000"
+                  height="15.000000"
+                  transform="translate(0.500000 0.500000)"
+                  fill="#FFFFFF"
+                  fill-opacity="0"
+                />
+                <path
+                  id="Vector"
+                  d="M7.58 13.87C5.65 13.21 1.33 10.46 1.33 5.79C1.33 3.73 2.99 2.06 5.04 2.06C6.25 2.06 7.32 2.65 8 3.55C8.67 2.65 9.75 2.06 10.96 2.06C13 2.06 14.66 3.73 14.66 5.79C14.66 10.46 10.34 13.21 8.41 13.87C8.18 13.95 7.81 13.95 7.58 13.87Z"
+                  stroke="#1C1C1C"
+                  stroke-opacity="1.000000"
+                  stroke-width="1.000000"
+                  stroke-linejoin="round"
+                />
+                <g opacity="0.000000" />
+              </svg>
+            </a>
+            <a href="/cart" class="header__link">
+              <span class="header__link-text">Корзина</span>
+              <span class="header__link-text-count">(5)</span>
+              <svg
+                width="16.000000"
+                height="16.000000"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs />
+                <rect
+                  id="vuesax/linear/bag"
+                  rx="0.000000"
+                  width="15.000000"
+                  height="15.000000"
+                  transform="translate(0.500000 0.500000)"
+                  fill="#FFFFFF"
+                  fill-opacity="0"
+                />
+                <path
+                  id="Vector"
+                  d="M5.87 1.33L3.45 3.75"
+                  stroke="#1C1C1C"
+                  stroke-opacity="1.000000"
+                  stroke-width="1.000000"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                />
+                <path
+                  id="Vector"
+                  d="M10.12 1.33L12.54 3.75"
+                  stroke="#1C1C1C"
+                  stroke-opacity="1.000000"
+                  stroke-width="1.000000"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                />
+                <path
+                  id="Vector"
+                  d="M2.81 3.9L13.18 3.9C14 3.9 14.66 4 14.66 5.23C14.66 6.66 14 6.56 13.18 6.56L2.81 6.56C1.99 6.56 1.33 6.66 1.33 5.23C1.33 4 1.99 3.9 2.81 3.9Z"
+                  stroke="#1C1C1C"
+                  stroke-opacity="1.000000"
+                  stroke-width="1.000000"
+                />
+                <path
+                  id="Vector"
+                  d="M6.5 9.33L6.5 11.7"
+                  stroke="#1C1C1C"
+                  stroke-opacity="1.000000"
+                  stroke-width="1.000000"
+                  stroke-linecap="round"
+                />
+                <path
+                  id="Vector"
+                  d="M9.57 9.33L9.57 11.7"
+                  stroke="#1C1C1C"
+                  stroke-opacity="1.000000"
+                  stroke-width="1.000000"
+                  stroke-linecap="round"
+                />
+                <path
+                  id="Vector"
+                  d="M2.33 6.66L3.27 12.42C3.48 13.72 4 14.66 5.9 14.66L9.92 14.66C12 14.66 12.3 13.76 12.54 12.5L13.66 6.66"
+                  stroke="#1C1C1C"
+                  stroke-opacity="1.000000"
+                  stroke-width="1.000000"
+                  stroke-linecap="round"
+                />
+                <g opacity="0.000000" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="catalog">
+        <div class="container">
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a href="#" class="catalog__link">Все</a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="catalog__link">Лыжи</a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="catalog__link">Сноуборды</a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="catalog__link">Экипировка</a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="catalog__link">Ботинки</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="breadcrumb">
+        <div class="container">
+          <nav class="breadcrumb__navigation">
+            <ul class="breadcrumb__list">
+              <li class="breadcrumb__item">
+                <a href="#" class="breadcrumb__link">Главная</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a href="#" class="breadcrumb__link">Лыжи</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a href="#" class="breadcrumb__link">Горные лыжи</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <section class="goods">
+        <div class="container">
+          <h2 class="goods__title">Избранное</h2>
+          <ul class="goods__list">
+            <li class="goods__item">
+              <article class="goods__card card">
+                <a href="#" class="card__link">
+                  <img
+                    src="img/photo.jpeg"
+                    alt="Фото зимней экипировки"
+                    class="card__image"
+                /></a>
+                <button class="card__like-button" type="button">
+                  <svg
+                    width="16.000000"
+                    height="16.000000"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <defs />
+                    <rect
+                      id="vuesax/linear/heart"
+                      rx="0.000000"
+                      width="15.000000"
+                      height="15.000000"
+                      transform="translate(0.500000 0.500000)"
+                      fill="#FFFFFF"
+                      fill-opacity="0"
+                    />
+                    <path
+                      id="Vector"
+                      d="M8.41 13.87C8.18 13.95 7.81 13.95 7.58 13.87C5.65 13.21 1.33 10.46 1.33 5.79C1.33 3.73 2.99 2.06 5.04 2.06C6.25 2.06 7.32 2.65 8 3.55C8.67 2.65 9.75 2.06 10.96 2.06C13 2.06 14.66 3.73 14.66 5.79C14.66 10.46 10.34 13.21 8.41 13.87Z"
+                      fill="#FFFFFF"
+                      fill-opacity="1.000000"
+                      fill-rule="nonzero"
+                    />
+                    <path
+                      id="Vector"
+                      d="M7.58 13.87C5.65 13.21 1.33 10.46 1.33 5.79C1.33 3.73 2.99 2.06 5.04 2.06C6.25 2.06 7.32 2.65 8 3.55C8.67 2.65 9.75 2.06 10.96 2.06C13 2.06 14.66 3.73 14.66 5.79C14.66 10.46 10.34 13.21 8.41 13.87C8.18 13.95 7.81 13.95 7.58 13.87Z"
+                      stroke="#1C1C1C"
+                      stroke-opacity="1.000000"
+                      stroke-width="1.000000"
+                      stroke-linejoin="round"
+                    />
+                    <g opacity="0.000000" />
+                  </svg>
+                </button>
+                <h3 class="card__title">Горные лыжи</h3>
+                <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                <button type="button" class="card__button">В корзину</button>
+              </article>
+            </li>
+          </ul>
+          <div class="cart__order">
+            <h3 class="cart__order-title">Оформление</h3>
+            <div class="cart__order-info">
+              <p class="cart__order-count">
+                <span class="cart__order-count">4</span>
+                товара на сумму:
+              </p>
+              <p class="cart__order-price">20 000&nbsp;₽</p>
+            </div>
+            <p class="cart__order-delivery">Доставка 0 ₽</p>
+            <button type="submit" class="cart__order-button" form="cartForm">
+              Оформить заказ
+            </button>
+          </div>
+          <form action="#" class="cart__form" if="cartForm" method="POST">
+            <h3 class="cart__form-title">Данные для доставки</h3>
+            <fieldset class="cart__form-inputs">
+              <input type="text" name="name" class="cart__form-input" />
+              <input type="tel" name="tel" class="cart__form-input" />
+              <input type="email" name="email" class="cart__form-input" />
+              <input type="text" name="address" class="cart__form-input" />
+              <textarea
+                name="comment"
+                id="comment"
+                class="cart__form-textarea"
+              ></textarea>
+            </fieldset>
+            <fieldset class="cart__form-fieldset">
+              <legend class="cart__form-legend">Доставка</legend>
+              <label for="delivery" class="cart__form-label">
+                <input
+                  type="radio"
+                  id="delivery"
+                  value="delivery"
+                  class="cart__form-radio"
+                  name="delivery"
+                />Доставка
+              </label>
+              <label for="pickup" class="cart__form-label">
+                <input
+                  type="radio"
+                  id="pickup"
+                  value="pickup"
+                  class="cart__form-radio"
+                  name="delivery"
+                />Самовывоз
+              </label>
+            </fieldset>
+
+            <fieldset class="cart__form-fieldset">
+              <legend class="cart__form-legend">Оплата</legend>
+              <label for="card" class="cart__form-label">
+                <input
+                  type="radio"
+                  id="card"
+                  value="card"
+                  class="cart__form-radio"
+                  name="payment"
+                />Картой при получении
+              </label>
+              <label for="cash" class="cart__form-label">
+                <input
+                  type="radio"
+                  id="cash"
+                  value="cash"
+                  class="cart__form-radio"
+                  name="payment"
+                />Наличными при получении
+              </label>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+      <section class="product">
+        <div class="container">
+          <h2 class="product__title">Горные лыжи</h2>
+          <div class="product__slider">
+            <div class="product__slider-image"></div>
+            <div class="product__slider-thumbnails"></div>
+          </div>
+          <div class="product__info">
+            <p class="product__info-price">5&nbsp;000&nbsp;₽</p>
+            <p class="product__info-id">арт. 84348945757</p>
+            <h3 class="product__info-title">Общие характеристики</h3>
+            <table class="product__info-table product__table">
+              <tr class="product__table-row">
+                <td class="roduct__table-item">Коллекция</td>
+                <td class="roduct__table-item">Snow</td>
+              </tr>
+              <tr class="product__table-row">
+                <td class="roduct__table-item">Производитель</td>
+                <td class="roduct__table-item">Россия</td>
+              </tr>
+              <tr class="product__table-row">
+                <td class="roduct__table-item">Гарантия</td>
+                <td class="roduct__table-item">18 мес.</td>
+              </tr>
+              <tr class="product__table-row">
+                <td class="roduct__table-item">Срок службы</td>
+                <td class="roduct__table-item">5 лет</td>
+              </tr>
+              <tr class="product__table-row">
+                <td class="roduct__table-item">Цвет</td>
+                <td class="roduct__table-item">Синий</td>
+              </tr>
+              <tr class="product__table-row">
+                <td class="roduct__table-item">Мккс. нагрузка</td>
+                <td class="roduct__table-item">130 кг.</td>
+              </tr>
+            </table>
+            <button type="button" class="product__button">В корзину</button>
+            <button type="button" class="product__like-button">
+              <svg
+                width="16.000000"
+                height="16.000000"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <desc>Created with Pixso.</desc>
+                <defs />
+                <rect
+                  id="vuesax/linear/heart"
+                  rx="0.000000"
+                  width="15.000000"
+                  height="15.000000"
+                  transform="translate(0.500000 0.500000)"
+                  fill="#FFFFFF"
+                  fill-opacity="0"
+                />
+                <path
+                  id="Vector"
+                  d="M8.41 13.87C8.18 13.95 7.81 13.95 7.58 13.87C5.65 13.21 1.33 10.46 1.33 5.79C1.33 3.73 2.99 2.06 5.04 2.06C6.25 2.06 7.32 2.65 8 3.55C8.67 2.65 9.75 2.06 10.96 2.06C13 2.06 14.66 3.73 14.66 5.79C14.66 10.46 10.34 13.21 8.41 13.87Z"
+                  fill="#FFFFFF"
+                  fill-opacity="1.000000"
+                  fill-rule="nonzero"
+                />
+                <path
+                  id="Vector"
+                  d="M7.58 13.87C5.65 13.21 1.33 10.46 1.33 5.79C1.33 3.73 2.99 2.06 5.04 2.06C6.25 2.06 7.32 2.65 8 3.55C8.67 2.65 9.75 2.06 10.96 2.06C13 2.06 14.66 3.73 14.66 5.79C14.66 10.46 10.34 13.21 8.41 13.87C8.18 13.95 7.81 13.95 7.58 13.87Z"
+                  stroke="#1C1C1C"
+                  stroke-opacity="1.000000"
+                  stroke-width="1.000000"
+                  stroke-linejoin="round"
+                />
+                <g opacity="0.000000" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="cart">
+        <div class="container">
+          <h2 class="cart__title">Корзина</h2>
+          <ul class="cart__list">
+            <li class="cart__item">
+              <img
+                src="/img/photo.jpeg"
+                alt="Лыжи"
+                width="120"
+                height="99"
+                class="cart__item-image"
+              />
+              <h3 class="cart__item-title">Горные лыжи</h3>
+              <p class="cart__item-price">5&nbsp;000&nbsp;₽</p>
+              <p class="cart__item-id">арт. 84348945757</p>
+              <div class="input__item-counter counter">
+                <button class="counter__minus" type="button">-</button>
+                <p class="counter__number">1</p>
+                <button type="button" class="counter__plus">+</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="order">
+        <div class="container">
+
+          <div class="order__wrapper">
+
+            <div class="order__group">
+              <h2 class="order__title">Заказ успешно размещен</h2>
+              <p class="order__price">20 000&nbsp;₽</p>
+            </div>
+
+            <p class="order__id">№43435</p>
+
+            <table class="order__table">
+              <caption class="order__table-caption">
+                Данные доставки
+              </caption>
+              <tr class="order__table-row">
+                <td class="order__table-item">Получатель</td>
+                <td class="order__table-item">Иванов Петр Александрович</td>
+              </tr>
+              <tr class="order__table-row">
+                <td class="order__table-item">Телефон</td>
+                <td class="order__table-item">+7(737)346 23 00</td>
+              </tr>
+              <tr class="order__table-row">
+                <td class="order__table-item">E-mail</td>
+                <td class="order__table-item">Ivanov84@gmail.com</td>
+              </tr>
+              <tr class="order__table-row">
+                <td class="order__table-item">Адрес доставки</td>
+                <td class="order__table-item">
+                  Москва, ул. Ленина, 21, кв.33
+                </td>
+              </tr>
+              <tr class="order__table-row">
+                <td class="order__table-item">Способ оплаты</td>
+                <td class="order__table-item">Картой при получении</td>
+              </tr>
+              <tr class="rdert__table-row">
+                <td class="order__table-item">Способ получения</td>
+                <td class="order__table-item">Доставка</td>
+              </tr>
+            </table>
+
+            <a href="/" class="order__btn-link">На главную</a>
+
+          </div>
+
+        </div>
+
+      </section>
+      
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <a href="/" class="footer__logo-link">
+          <svg
+            class="footer__logo-icon"
+            width="275.000977"
+            height="60.000000"
+            viewBox="0 0 275.001 60"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs>
+              <clipPath id="clip7_2176">
+                <rect
+                  id="Frame"
+                  rx="0.000000"
+                  width="58.137882"
+                  height="59.000000"
+                  transform="translate(0.500000 0.500000)"
+                  fill="white"
+                  fill-opacity="0"
+                />
+              </clipPath>
+            </defs>
+            <path
+              id="Vector"
+              d="M266.09 45.14C264.04 45.14 262.27 44.66 260.77 43.69C259.27 42.71 258.11 41.36 257.29 39.64C256.48 37.91 256.08 35.92 256.08 33.66C256.08 31.42 256.48 29.43 257.29 27.69C258.11 25.94 259.24 24.57 260.68 23.58C262.13 22.59 263.81 22.09 265.7 22.09C266.89 22.09 268.04 22.31 269.15 22.76C270.25 23.19 271.25 23.86 272.12 24.77C273.01 25.67 273.71 26.81 274.22 28.18C274.74 29.55 275 31.16 275 33.03L275 34.3L257.84 34.3L257.84 32.03L272.39 32.03C272.39 30.59 272.11 29.31 271.54 28.17C270.97 27.02 270.19 26.11 269.18 25.44C268.18 24.77 267.02 24.44 265.7 24.44C264.31 24.44 263.09 24.82 262.03 25.57C260.97 26.32 260.14 27.32 259.54 28.56C258.95 29.8 258.65 31.15 258.64 32.62L258.64 33.98C258.64 35.75 258.94 37.3 259.54 38.63C260.15 39.94 261.01 40.96 262.13 41.69C263.24 42.41 264.56 42.78 266.09 42.78C267.13 42.78 268.04 42.61 268.82 42.28C269.61 41.95 270.27 41.51 270.81 40.96C271.35 40.4 271.76 39.79 272.04 39.12L274.45 39.92C274.12 40.86 273.57 41.72 272.81 42.51C272.06 43.31 271.11 43.95 269.98 44.43C268.85 44.9 267.56 45.14 266.09 45.14Z"
+              fill="#0044F0"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+            <path
+              id="Vector"
+              d="M250.47 14.97L250.47 44.68L247.93 44.68L247.93 14.97L250.47 14.97Z"
+              fill="#0044F0"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+            <path
+              id="Vector"
+              d="M223.79 53.03L223.79 22.39L226.26 22.39L226.26 26.64L226.56 26.64C226.87 25.98 227.29 25.29 227.82 24.6C228.35 23.89 229.06 23.3 229.94 22.81C230.82 22.33 231.94 22.09 233.28 22.09C235.09 22.09 236.68 22.57 238.03 23.54C239.39 24.5 240.45 25.84 241.2 27.57C241.97 29.29 242.35 31.3 242.35 33.59C242.35 35.89 241.97 37.91 241.2 39.64C240.45 41.37 239.39 42.72 238.03 43.69C236.68 44.66 235.1 45.14 233.31 45.14C231.98 45.14 230.87 44.9 229.98 44.41C229.09 43.93 228.37 43.34 227.82 42.63C227.28 41.91 226.86 41.22 226.56 40.54L226.33 40.54L226.33 53.03L223.79 53.03ZM226.3 33.55C226.3 35.35 226.57 36.94 227.09 38.34C227.62 39.72 228.39 40.81 229.38 41.6C230.38 42.38 231.59 42.78 233.01 42.78C234.47 42.78 235.7 42.37 236.7 41.56C237.71 40.73 238.48 39.63 239 38.23C239.53 36.84 239.8 35.28 239.8 33.55C239.8 31.84 239.54 30.29 239.02 28.92C238.5 27.55 237.74 26.46 236.73 25.66C235.72 24.84 234.48 24.44 233.01 24.44C231.58 24.44 230.36 24.83 229.36 25.61C228.36 26.39 227.6 27.46 227.08 28.83C226.56 30.2 226.3 31.77 226.3 33.55Z"
+              fill="#0044F0"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+            <path
+              id="Vector"
+              d="M208.53 45.14C206.64 45.14 204.96 44.65 203.5 43.67C202.05 42.7 200.92 41.35 200.1 39.63C199.28 37.9 198.87 35.9 198.87 33.64C198.87 31.35 199.28 29.35 200.1 27.62C200.92 25.87 202.05 24.52 203.5 23.55C204.96 22.58 206.64 22.09 208.53 22.09C210.43 22.09 212.1 22.58 213.55 23.55C215 24.53 216.14 25.88 216.95 27.62C217.78 29.35 218.2 31.35 218.2 33.64C218.2 35.9 217.79 37.9 216.97 39.63C216.15 41.35 215.01 42.7 213.55 43.67C212.1 44.65 210.43 45.14 208.53 45.14ZM208.53 42.78C210.06 42.78 211.35 42.36 212.41 41.53C213.47 40.7 214.27 39.59 214.81 38.21C215.36 36.82 215.64 35.3 215.64 33.64C215.64 31.97 215.36 30.44 214.81 29.05C214.27 27.66 213.47 26.54 212.41 25.7C211.35 24.86 210.06 24.44 208.53 24.44C207.02 24.44 205.73 24.86 204.66 25.7C203.6 26.54 202.8 27.66 202.24 29.05C201.7 30.44 201.43 31.97 201.43 33.64C201.43 35.3 201.7 36.82 202.24 38.21C202.8 39.59 203.6 40.7 204.66 41.53C205.72 42.36 207.01 42.78 208.53 42.78Z"
+              fill="#0044F0"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+            <path
+              id="Vector"
+              d="M185.48 45.14C183.43 45.14 181.66 44.66 180.16 43.69C178.67 42.71 177.51 41.36 176.69 39.64C175.88 37.91 175.47 35.92 175.47 33.66C175.47 31.42 175.88 29.43 176.69 27.69C177.51 25.94 178.64 24.57 180.08 23.58C181.52 22.59 183.2 22.09 185.1 22.09C186.29 22.09 187.43 22.31 188.54 22.76C189.65 23.19 190.64 23.86 191.52 24.77C192.4 25.67 193.1 26.81 193.62 28.18C194.13 29.55 194.39 31.16 194.39 33.03L194.39 34.3L177.23 34.3L177.23 32.03L191.79 32.03C191.79 30.59 191.5 29.31 190.93 28.17C190.37 27.02 189.58 26.11 188.57 25.44C187.57 24.77 186.41 24.44 185.1 24.44C183.7 24.44 182.48 24.82 181.42 25.57C180.36 26.32 179.53 27.32 178.93 28.56C178.34 29.8 178.04 31.15 178.03 32.62L178.03 33.98C178.03 35.75 178.33 37.3 178.93 38.63C179.54 39.94 180.4 40.96 181.52 41.69C182.64 42.41 183.96 42.78 185.48 42.78C186.52 42.78 187.43 42.61 188.21 42.28C189 41.95 189.67 41.51 190.2 40.96C190.74 40.4 191.15 39.79 191.43 39.12L193.85 39.92C193.51 40.86 192.96 41.72 192.2 42.51C191.45 43.31 190.5 43.95 189.37 44.43C188.25 44.9 186.95 45.14 185.48 45.14Z"
+              fill="#0044F0"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+            <path
+              id="Vector"
+              d="M152.2 44.68L152.2 14.97L161.65 14.97C163.73 14.97 165.47 15.37 166.86 16.18C168.26 16.99 169.31 18.08 170.02 19.46C170.73 20.85 171.09 22.4 171.09 24.13C171.09 25.87 170.74 27.43 170.03 28.82C169.33 30.2 168.28 31.3 166.89 32.11C165.49 32.92 163.76 33.32 161.7 33.32L154.26 33.32L154.26 30.88L161.62 30.88C163.16 30.88 164.43 30.59 165.44 30.01C166.45 29.42 167.21 28.62 167.7 27.6C168.21 26.59 168.46 25.43 168.46 24.13C168.46 22.84 168.21 21.68 167.7 20.67C167.21 19.65 166.45 18.85 165.43 18.27C164.42 17.69 163.14 17.4 161.58 17.4L154.88 17.4L154.88 44.68L152.2 44.68Z"
+              fill="#0044F0"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+            <path
+              id="Vector"
+              d="M138.41 14.97L138.41 44.68L130.46 44.68L130.46 14.97L138.41 14.97Z"
+              fill="#0044F0"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+            <path
+              id="Vector"
+              d="M101.68 44.68L101.68 14.97L109.63 14.97L109.63 26.98L110.03 26.98L118.84 14.97L128.1 14.97L118.21 28.2L128.33 44.68L118.84 44.68L112.26 33.53L109.63 37.02L109.63 44.68L101.68 44.68Z"
+              fill="#0044F0"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+            <path
+              id="Vector"
+              d="M90.65 24.25C90.57 23.28 90.21 22.53 89.58 21.99C88.95 21.45 87.99 21.17 86.7 21.17C85.88 21.17 85.21 21.28 84.69 21.48C84.17 21.67 83.79 21.94 83.54 22.28C83.29 22.62 83.16 23 83.16 23.44C83.14 23.8 83.2 24.12 83.34 24.41C83.49 24.69 83.73 24.95 84.06 25.18C84.38 25.4 84.79 25.6 85.3 25.79C85.81 25.97 86.41 26.14 87.1 26.28L89.5 26.8C91.12 27.15 92.51 27.61 93.66 28.18C94.82 28.75 95.76 29.42 96.5 30.2C97.23 30.96 97.77 31.82 98.11 32.78C98.46 33.74 98.65 34.78 98.66 35.91C98.65 37.87 98.16 39.52 97.21 40.87C96.26 42.23 94.89 43.26 93.12 43.96C91.36 44.67 89.24 45.02 86.76 45.02C84.21 45.02 81.99 44.64 80.1 43.88C78.21 43.11 76.74 41.94 75.69 40.35C74.65 38.76 74.13 36.72 74.12 34.23L81.67 34.23C81.72 35.14 81.94 35.9 82.34 36.52C82.74 37.14 83.3 37.61 84.03 37.93C84.76 38.25 85.63 38.41 86.64 38.41C87.49 38.41 88.2 38.3 88.78 38.09C89.35 37.88 89.78 37.58 90.08 37.2C90.37 36.83 90.52 36.4 90.53 35.91C90.52 35.46 90.38 35.06 90.09 34.72C89.81 34.38 89.36 34.07 88.72 33.8C88.08 33.52 87.22 33.25 86.13 33.01L83.21 32.37C80.62 31.8 78.58 30.85 77.08 29.52C75.59 28.17 74.85 26.34 74.86 24.02C74.85 22.13 75.35 20.48 76.35 19.07C77.36 17.65 78.76 16.54 80.54 15.75C82.33 14.96 84.39 14.56 86.7 14.56C89.07 14.56 91.11 14.96 92.84 15.76C94.56 16.57 95.89 17.7 96.83 19.16C97.77 20.61 98.25 22.31 98.25 24.25L90.65 24.25Z"
+              fill="#0044F0"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+            <rect
+              id="Frame"
+              rx="0.000000"
+              width="58.137882"
+              height="59.000000"
+              transform="translate(0.500000 0.500000)"
+              fill="#FFFFFF"
+              fill-opacity="0"
+            />
+            <g clip-path="url(#clip7_2176)">
+              <path
+                id="Vector"
+                d="M6.45 29.71L46.51 55.55L46.51 55.55C46.9 55.79 47.23 55.91 47.55 55.85C47.9 55.79 48.21 55.56 48.52 55.26C48.98 54.81 49.72 54.83 50.16 55.3C50.61 55.78 50.59 56.53 50.12 56.97C49.44 57.63 48.72 58.05 47.95 58.18C47.14 58.32 46.25 58.18 45.26 57.55L45.26 57.55L5.19 31.7C5.19 31.7 5.18 31.7 5.18 31.69L5.18 31.69C4.21 31.05 3.7 30.29 3.49 29.49C3.29 28.72 3.36 27.88 3.66 26.98C3.87 26.36 4.53 26.03 5.14 26.24C5.75 26.45 6.07 27.12 5.87 27.74C5.73 28.15 5.65 28.53 5.74 28.88C5.83 29.19 6.07 29.46 6.45 29.71ZM47.15 2.28C50.09 3.61 51.4 7.1 50.09 10.08C48.77 13.05 45.33 14.39 42.4 13.05C39.46 11.72 38.15 8.23 39.46 5.25C40.78 2.28 44.22 0.94 47.15 2.28ZM29.11 22.68L31.96 16.21C32.08 15.94 32.11 15.63 32.04 15.33C31.98 15.04 31.81 14.77 31.58 14.58L25.4 9.44C24.17 8.42 23.72 7.55 24.23 6.37L24.27 6.28C24.78 5.1 25.87 4.22 27.29 5.09C27.29 5.09 33.13 9.41 34.72 10.69C34.98 10.91 35.28 11.09 35.59 11.24C37.49 12.1 44.47 15.62 46.78 16.67C47.26 16.89 47.71 17.2 48.09 17.57L54.44 23.72C55.37 24.65 56.1 25.63 55.58 26.8L55.53 26.89C55.01 28.06 53.6 28.96 52.49 28.05L46.03 21.64C45.99 21.6 45.94 21.57 45.88 21.56C45.83 21.54 45.77 21.54 45.71 21.55C45.66 21.56 45.6 21.58 45.56 21.62C45.51 21.66 45.48 21.7 45.45 21.76L41.73 30.2L47.7 38.59C48.04 39.06 48.21 39.64 48.19 40.23C48.16 40.81 47.94 41.38 47.56 41.82L42.49 47.78C42.08 48.25 41.5 48.54 40.89 48.59C40.27 48.63 39.66 48.43 39.19 48.02C38.21 47.16 38.1 45.66 38.95 44.67L41.9 41.21C42 41.1 42.05 40.95 42.06 40.8C42.07 40.65 42.02 40.5 41.94 40.38L39.58 37.07C35.69 31.66 30.31 29.48 26.26 28.03L21.43 27.08C21.28 27.06 21.13 27.08 21 27.15C20.87 27.22 20.76 27.33 20.7 27.47L18.86 31.64C18.33 32.84 16.95 33.37 15.77 32.84C15.2 32.58 14.76 32.11 14.54 31.52C14.32 30.93 14.34 30.28 14.59 29.7C15.51 27.62 16.89 24.5 17.76 22.52C18 21.98 18.41 21.54 18.92 21.27C19.44 21 20.03 20.91 20.59 21.02L29.11 22.68Z"
+                fill="#0044F0"
+                fill-opacity="1.000000"
+                fill-rule="evenodd"
+              />
+            </g>
+          </svg>
+        </a>
+
+        <div class="footer__social">
+          <a href="tel:+79398371297" class="footer__social-phone">
+            <svg
+              width="12"
+              height="14"
+              viewBox="0 0 12 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs />
+              <path
+                id="Vector"
+                d="M1.6 0.4L2.7 0.06C3.07 -0.05 3.46 -0.02 3.81 0.14C4.15 0.3 4.43 0.57 4.59 0.92L5.36 2.65C5.5 2.95 5.54 3.28 5.47 3.6C5.41 3.93 5.24 4.22 5 4.44L3.82 5.54C3.66 5.69 3.78 6.28 4.36 7.28C4.94 8.28 5.39 8.68 5.59 8.62L7.14 8.15C7.45 8.05 7.79 8.05 8.1 8.16C8.41 8.26 8.68 8.46 8.87 8.73L9.98 10.26C10.2 10.57 10.3 10.94 10.27 11.32C10.23 11.7 10.06 12.06 9.78 12.32L8.93 13.13C8.66 13.39 8.32 13.57 7.95 13.66C7.58 13.74 7.19 13.73 6.83 13.62C5.04 13.07 3.39 11.45 1.85 8.77C0.3 6.09 -0.29 3.83 0.12 1.99C0.2 1.61 0.38 1.27 0.64 0.99C0.9 0.71 1.23 0.51 1.6 0.4Z"
+                fill="#fff"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+
+            +7 (939) 839 12 97</a
+          >
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link"
+                ><svg
+                  width="24.000000"
+                  height="24.000000"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <desc>Created with Pixso.</desc>
+                  <defs>
+                    <clipPath id="clip2_840">
+                      <rect
+                        id="entypo-social:vk-with-circle"
+                        rx="0.000000"
+                        width="23.000000"
+                        height="23.000000"
+                        transform="translate(0.500000 0.500000)"
+                        fill="white"
+                        fill-opacity="0"
+                      />
+                    </clipPath>
+                  </defs>
+                  <rect
+                    id="entypo-social:vk-with-circle"
+                    rx="0.000000"
+                    width="23.000000"
+                    height="23.000000"
+                    transform="translate(0.500000 0.500000)"
+                    fill="#FFFFFF"
+                    fill-opacity="0"
+                  />
+                  <g clip-path="url(#clip2_840)">
+                    <path
+                      id="Vector"
+                      d="M12 0.47C5.63 0.47 0.48 5.63 0.48 12C0.48 18.36 5.63 23.52 12 23.52C18.36 23.52 23.52 18.36 23.52 12C23.52 5.63 18.36 0.47 12 0.47ZM16.43 13.47C16.43 13.47 17.44 14.48 17.7 14.94C17.7 14.95 17.71 14.96 17.71 14.97C17.81 15.14 17.83 15.27 17.78 15.37C17.7 15.54 17.41 15.62 17.31 15.63L15.51 15.63C15.39 15.63 15.13 15.6 14.81 15.38C14.57 15.21 14.33 14.93 14.09 14.65C13.74 14.25 13.44 13.9 13.14 13.9C13.1 13.9 13.06 13.9 13.02 13.92C12.79 13.99 12.5 14.32 12.5 15.2C12.5 15.47 12.28 15.63 12.13 15.63L11.3 15.63C11.02 15.63 9.56 15.53 8.26 14.16C6.68 12.49 5.25 9.13 5.24 9.1C5.15 8.88 5.33 8.76 5.54 8.76L7.35 8.76C7.6 8.76 7.68 8.91 7.73 9.04C7.8 9.2 8.03 9.8 8.42 10.48C9.06 11.59 9.44 12.05 9.76 12.05C9.81 12.04 9.87 12.03 9.92 12C10.33 11.78 10.25 10.33 10.23 10.03C10.23 9.97 10.23 9.38 10.03 9.1C9.88 8.9 9.62 8.82 9.47 8.79C9.53 8.7 9.61 8.63 9.71 8.59C9.99 8.45 10.49 8.43 10.99 8.43L11.26 8.43C11.8 8.43 11.94 8.47 12.14 8.52C12.53 8.61 12.54 8.87 12.51 9.74C12.5 9.99 12.49 10.27 12.49 10.6C12.49 10.68 12.48 10.75 12.48 10.83C12.47 11.28 12.46 11.78 12.77 11.99C12.81 12.02 12.86 12.03 12.91 12.03C13.02 12.03 13.35 12.03 14.24 10.5C14.51 10.01 14.75 9.5 14.95 8.97C14.97 8.94 15.02 8.85 15.08 8.81C15.13 8.79 15.18 8.77 15.23 8.78L17.37 8.78C17.6 8.78 17.76 8.81 17.79 8.9C17.84 9.04 17.78 9.48 16.81 10.8L16.37 11.37C15.49 12.53 15.49 12.59 16.43 13.47Z"
+                      fill="#FFFFFF"
+                      fill-opacity="1.000000"
+                      fill-rule="nonzero"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link"
+                ><svg
+                  width="20.000000"
+                  height="14.000000"
+                  viewBox="0 0 20 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <desc>Created with Pixso.</desc>
+                  <defs />
+                  <path
+                    id="Vector"
+                    d="M8 10L13.18 7L8 4L8 10ZM19.56 2.17C19.68 2.64 19.77 3.27 19.83 4.07C19.91 4.87 19.93 5.56 19.93 6.16L20 7C20 9.18 19.83 10.8 19.56 11.83C19.31 12.73 18.73 13.31 17.83 13.56C17.35 13.69 16.5 13.78 15.18 13.84C13.87 13.91 12.68 13.94 11.58 13.94L10 14C5.81 14 3.2 13.84 2.16 13.56C1.27 13.31 0.68 12.73 0.43 11.83C0.31 11.36 0.22 10.73 0.16 9.93C0.08 9.13 0.06 8.43 0.06 7.84L0 7C0 4.81 0.16 3.2 0.43 2.17C0.68 1.27 1.27 0.69 2.16 0.44C2.64 0.3 3.5 0.22 4.81 0.16C6.12 0.08 7.31 0.05 8.41 0.05L10 0C14.18 0 16.79 0.16 17.83 0.44C18.73 0.69 19.31 1.27 19.56 2.17Z"
+                    fill="#FFFFFF"
+                    fill-opacity="1.000000"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link"
+                ><svg
+                  width="24.000000"
+                  height="24.000000"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <desc>Created with Pixso.</desc>
+                  <defs />
+                  <path
+                    id="Vector"
+                    d="M24 12C24 15.18 22.73 18.23 20.48 20.48C18.23 22.73 15.18 24 12 24C8.81 24 5.76 22.73 3.51 20.48C1.26 18.23 0 15.18 0 12C0 8.81 1.26 5.76 3.51 3.51C5.76 1.26 8.81 0 12 0C15.18 0 18.23 1.26 20.48 3.51C22.73 5.76 24 8.81 24 12ZM12.43 8.85C11.26 9.34 8.92 10.35 5.43 11.87C4.86 12.09 4.56 12.32 4.53 12.53C4.49 12.9 4.95 13.04 5.57 13.24L5.83 13.32C6.44 13.52 7.27 13.75 7.7 13.76C8.09 13.77 8.52 13.61 9 13.28C12.27 11.07 13.95 9.96 14.06 9.94C14.13 9.92 14.24 9.9 14.31 9.96C14.38 10.02 14.37 10.14 14.36 10.17C14.32 10.36 12.52 12.03 11.59 12.9C11.31 13.17 11.1 13.36 11.06 13.4C10.97 13.5 10.87 13.59 10.78 13.68C10.21 14.23 9.78 14.64 10.8 15.31C11.29 15.64 11.68 15.9 12.07 16.17C12.5 16.46 12.93 16.75 13.48 17.11C13.62 17.2 13.75 17.3 13.88 17.39C14.38 17.75 14.83 18.06 15.38 18.01C15.7 17.98 16.03 17.68 16.2 16.78C16.6 14.66 17.38 10.05 17.56 8.16C17.57 8 17.56 7.84 17.54 7.68C17.52 7.56 17.46 7.44 17.37 7.36C17.23 7.26 17.07 7.22 16.9 7.22C16.45 7.23 15.76 7.47 12.43 8.85Z"
+                    fill="#FFFFFF"
+                    fill-opacity="1.000000"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer__developer-list">
+          <li class="footer__developer-item">
+            Designer:
+            <a href="mailto:AnastasiaIlina" class="footer__developer-link"
+              >Anastasia Ilina</a
+            >
+          </li>
+          <li class="footer__developer-item">
+            Developer:
+            <a href="mailto:Test" class="footer__developer-link"
+              >DmitryTaras</a
+            >
+          </li>
+        </ul>
+
+        <p class="footer__copyright">&copy;SKI People, 2025</p>
+      </div>
+    </footer>
+  </body>
+</html>

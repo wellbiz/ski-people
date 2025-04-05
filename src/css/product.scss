@@ -1,0 +1,161 @@
+.product {
+  padding: 24px 0 60px;
+
+  &__container {
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @media (min-width: 768px) {
+      gap: 40px;
+    }
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      gap: 12px;
+    }
+
+    @media (min-width: 1440px) {
+      gap: 16px;
+    }
+  }
+  &__title {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      font-size: 32px;
+    }
+
+    @media (min-width: 1024px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__slider {
+  }
+  &__slider-image {
+    object-fit: cover;
+    min-height: 236px;
+    width: 100%;
+    border-radius: 16px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 13px;
+    }
+
+    @media (min-width: 1024px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__info {
+  }
+  &__info-price {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  &__info-id {
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 32px;
+    background-color: var(--light-grey);
+    padding: 4px 8px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 28px;
+    }
+
+    @media (min-width: 1024px) {
+      margin-bottom: 24px;
+    }
+  }
+  &__info-title {
+    font-size: 16px;
+    margin-bottom: 4px;
+    font-weight: 400;
+  }
+  &__info-table {
+  }
+  &__table {
+    width: 100%;
+    margin-bottom: 24px;
+    border-collapse: collapse;
+  }
+  &__table-row {
+    border-bottom: 1px solid var(--light-grey);
+  }
+  &__table-item {
+    padding: 8px 0;
+    color: #969eae;
+
+    &:last-child {
+      color: #1c1c1c;
+      text-align: right;
+    }
+  }
+}
+
+.slider-thumbnails {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 14px;
+  }
+
+  @media (min-width: 1024px) {
+    gap: 12px;
+  }
+
+  @media (min-width: 1440px) {
+    gap: 16px;
+  }
+
+  &__item {
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.info-buttons {
+  display: flex;
+  gap: 12px;
+
+  &__to-cart {
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid transparent;
+    border-radius: 32px;
+    padding: 12px 24px;
+    width: 100%;
+    transition: background-color 0.2s ease-in-out;
+    &:hover,
+    &:active {
+      background-color: var(--white);
+      border: 1px solid var(--blue);
+      color: var(--blue);
+      padding: 11px 23px;
+    }
+  }
+
+  &__like {
+    align-self: center;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease-in-out;
+    &:active {
+      background-color: var(--blue);
+    }
+  }
+}

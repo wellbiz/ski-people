@@ -1,0 +1,138 @@
+.goods {
+  padding: 40px 0;
+  
+  @media (min-width: 768px) {
+    padding: 60px 0;
+  }
+
+  &__title {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      font-size: 32px;
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: 1024px) {
+      margin-bottom: 40px;
+    }
+  }
+  &__list {
+    display: grid;
+    gap: 32px 8px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+
+    @media (min-width: 768px) {
+      gap: 32px 8px;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    }
+
+    @media (min-width: 1024px) {
+      gap: 40px 16px;
+      grid-template-columns: repeat(auto-fit, minmax(302px, 1fr));
+    }
+
+    @media (min-width: 1440px) {
+      grid-template-columns: repeat(auto-fit, minmax(302px, 1fr));
+    }
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &__link {
+    margin-bottom: 12px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 19px;
+    }
+
+    @media (min-width: 1024px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+  &__like-button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    gap: 18px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 37px;
+    }
+    @media (min-width: 1024px) {
+      margin-bottom: 18px;
+    }
+
+    &-title {
+      font-size: 12px;
+      @media (min-width: 768px) {
+        font-size: 16px;
+      }
+    }
+    &-price {
+      font-size: 16px;
+      @media (min-width: 768px) {
+        font-size: 20px;
+      }
+    }
+  }
+  &__button {
+    border: 1px solid #0040f0;
+    border-radius: 32px;
+    padding: 12px 24px;
+    color: #0040f0;
+  }
+  &__order {
+  }
+  &__order-title {
+  }
+  &__order-info {
+  }
+  &__order-count {
+  }
+  &__order-price {
+  }
+  &__order-delivery {
+  }
+  &__order-button {
+  }
+}
+
+.cart__form {
+  &__form-title {
+  }
+  &__form-inputs {
+  }
+  &__form-input {
+  }
+  &__form-textarea {
+  }
+  &__form-fieldset {
+  }
+  &__form-legend {
+  }
+  &__form-label {
+  }
+  &__form-radio {
+  }
+}

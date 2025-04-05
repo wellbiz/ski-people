@@ -5,6 +5,28 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ski People</title>
+    <link
+      rel="preload"
+      href="fonts/OpenSans-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/Inter.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/Inter-Black.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
 
@@ -22,7 +44,12 @@
           </a>
 
           <form action="#" class="header__search">
-            <input type="search" name="search" class="header__search-input" />
+            <input
+              type="search"
+              name="search"
+              class="header__search-input"
+              placeholder="Введите запрос"
+            />
             <button type="submit" class="header__search-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -114,11 +141,11 @@
       </div>
     </header>
     <main>
-      <section class="catalog">
+      <!-- <section class="catalog">
         <div class="container">
           <ul class="catalog__list">
             <li class="catalog__item">
-              <a href="#" class="catalog__link">Все</a>
+              <a href="#" class="catalog__link catalog__link_active">Все</a>
             </li>
             <li class="catalog__item">
               <a href="#" class="catalog__link">Лыжи</a>
@@ -152,9 +179,9 @@
             </ul>
           </nav>
         </div>
-      </section>
+      </section> -->
 
-      <section class="goods">
+      <!-- <section class="goods">
         <div class="container">
           <h2 class="goods__title">Избранное</h2>
           <ul class="goods__list">
@@ -173,32 +200,420 @@
                     height="16"
                     fill="none"
                   >
-                    <rect
-                      width="15"
-                      height="15"
-                      fill="none"
-                      rx="0"
-                      transform="translate(.5 .5)"
+                    <path fill="none" d="M0 0h16v16H0z" />
+                    <path
+                      fill="#FFF"
+                      d="M8.41 13.87c-.23.08-.6.08-.83 0-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08Z"
                     />
                     <path
                       stroke="#1C1C1C"
-                      stroke-linecap="round"
                       stroke-linejoin="round"
-                      d="M5.87 1.33 3.45 3.75M10.12 1.33l2.42 2.42"
-                    />
-                    <path
-                      stroke="#1C1C1C"
-                      d="M2.81 3.9h10.37c.82 0 1.48.1 1.48 1.33 0 1.43-.66 1.33-1.48 1.33H2.81c-.82 0-1.48.1-1.48-1.33 0-1.23.66-1.33 1.48-1.33Z"
-                    />
-                    <path
-                      stroke="#1C1C1C"
-                      stroke-linecap="round"
-                      d="M6.5 9.33v2.37M9.57 9.33v2.37M2.33 6.66l.94 5.76c.21 1.3.73 2.24 2.63 2.24h4.02c2.08 0 2.38-.9 2.62-2.16l1.12-5.84"
+                      d="M7.58 13.87c-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08-.23.08-.6.08-.83 0Z"
                     />
                   </svg>
                 </button>
-                <h3 class="card__title">Горные лыжи</h3>
-                <p class="card__price">5&nbsp;000&nbsp;₽</p>
+
+                <div class="card__info">
+                  <h3 class="card__info-title">Горные лыжи</h3>
+                  <p class="card__info-price">5&nbsp;000&nbsp;₽</p>
+                </div>
+
+                <button type="button" class="card__button">В корзину</button>
+              </article>
+            </li>
+            <li class="goods__item">
+              <article class="goods__card card">
+                <a href="#" class="card__link">
+                  <img
+                    src="img/photo.jpeg"
+                    alt="Фото зимней экипировки"
+                    class="card__image"
+                /></a>
+                <button class="card__like-button" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="none"
+                  >
+                    <path fill="none" d="M0 0h16v16H0z" />
+                    <path
+                      fill="#FFF"
+                      d="M8.41 13.87c-.23.08-.6.08-.83 0-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08Z"
+                    />
+                    <path
+                      stroke="#1C1C1C"
+                      stroke-linejoin="round"
+                      d="M7.58 13.87c-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08-.23.08-.6.08-.83 0Z"
+                    />
+                  </svg>
+                </button>
+
+                <div class="card__info">
+                  <h3 class="card__info-title">Горные лыжи</h3>
+                  <p class="card__info-price">5&nbsp;000&nbsp;₽</p>
+                </div>
+
+                <button type="button" class="card__button">В корзину</button>
+              </article>
+            </li>
+            <li class="goods__item">
+              <article class="goods__card card">
+                <a href="#" class="card__link">
+                  <img
+                    src="img/photo.jpeg"
+                    alt="Фото зимней экипировки"
+                    class="card__image"
+                /></a>
+                <button class="card__like-button" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="none"
+                  >
+                    <path fill="none" d="M0 0h16v16H0z" />
+                    <path
+                      fill="#FFF"
+                      d="M8.41 13.87c-.23.08-.6.08-.83 0-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08Z"
+                    />
+                    <path
+                      stroke="#1C1C1C"
+                      stroke-linejoin="round"
+                      d="M7.58 13.87c-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08-.23.08-.6.08-.83 0Z"
+                    />
+                  </svg>
+                </button>
+
+                <div class="card__info">
+                  <h3 class="card__info-title">Горные лыжи</h3>
+                  <p class="card__info-price">5&nbsp;000&nbsp;₽</p>
+                </div>
+
+                <button type="button" class="card__button">В корзину</button>
+              </article>
+            </li>
+            <li class="goods__item">
+              <article class="goods__card card">
+                <a href="#" class="card__link">
+                  <img
+                    src="img/photo.jpeg"
+                    alt="Фото зимней экипировки"
+                    class="card__image"
+                /></a>
+                <button class="card__like-button" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="none"
+                  >
+                    <path fill="none" d="M0 0h16v16H0z" />
+                    <path
+                      fill="#FFF"
+                      d="M8.41 13.87c-.23.08-.6.08-.83 0-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08Z"
+                    />
+                    <path
+                      stroke="#1C1C1C"
+                      stroke-linejoin="round"
+                      d="M7.58 13.87c-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08-.23.08-.6.08-.83 0Z"
+                    />
+                  </svg>
+                </button>
+
+                <div class="card__info">
+                  <h3 class="card__info-title">Горные лыжи</h3>
+                  <p class="card__info-price">5&nbsp;000&nbsp;₽</p>
+                </div>
+
+                <button type="button" class="card__button">В корзину</button>
+              </article>
+            </li>
+            <li class="goods__item">
+              <article class="goods__card card">
+                <a href="#" class="card__link">
+                  <img
+                    src="img/photo.jpeg"
+                    alt="Фото зимней экипировки"
+                    class="card__image"
+                /></a>
+                <button class="card__like-button" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="none"
+                  >
+                    <path fill="none" d="M0 0h16v16H0z" />
+                    <path
+                      fill="#FFF"
+                      d="M8.41 13.87c-.23.08-.6.08-.83 0-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08Z"
+                    />
+                    <path
+                      stroke="#1C1C1C"
+                      stroke-linejoin="round"
+                      d="M7.58 13.87c-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08-.23.08-.6.08-.83 0Z"
+                    />
+                  </svg>
+                </button>
+
+                <div class="card__info">
+                  <h3 class="card__info-title">Горные лыжи</h3>
+                  <p class="card__info-price">5&nbsp;000&nbsp;₽</p>
+                </div>
+
+                <button type="button" class="card__button">В корзину</button>
+              </article>
+            </li>
+            <li class="goods__item">
+              <article class="goods__card card">
+                <a href="#" class="card__link">
+                  <img
+                    src="img/photo.jpeg"
+                    alt="Фото зимней экипировки"
+                    class="card__image"
+                /></a>
+                <button class="card__like-button" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="none"
+                  >
+                    <path fill="none" d="M0 0h16v16H0z" />
+                    <path
+                      fill="#FFF"
+                      d="M8.41 13.87c-.23.08-.6.08-.83 0-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08Z"
+                    />
+                    <path
+                      stroke="#1C1C1C"
+                      stroke-linejoin="round"
+                      d="M7.58 13.87c-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08-.23.08-.6.08-.83 0Z"
+                    />
+                  </svg>
+                </button>
+
+                <div class="card__info">
+                  <h3 class="card__info-title">Горные лыжи</h3>
+                  <p class="card__info-price">5&nbsp;000&nbsp;₽</p>
+                </div>
+
+                <button type="button" class="card__button">В корзину</button>
+              </article>
+            </li>
+            <li class="goods__item">
+              <article class="goods__card card">
+                <a href="#" class="card__link">
+                  <img
+                    src="img/photo.jpeg"
+                    alt="Фото зимней экипировки"
+                    class="card__image"
+                /></a>
+                <button class="card__like-button" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="none"
+                  >
+                    <path fill="none" d="M0 0h16v16H0z" />
+                    <path
+                      fill="#FFF"
+                      d="M8.41 13.87c-.23.08-.6.08-.83 0-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08Z"
+                    />
+                    <path
+                      stroke="#1C1C1C"
+                      stroke-linejoin="round"
+                      d="M7.58 13.87c-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08-.23.08-.6.08-.83 0Z"
+                    />
+                  </svg>
+                </button>
+
+                <div class="card__info">
+                  <h3 class="card__info-title">Горные лыжи</h3>
+                  <p class="card__info-price">5&nbsp;000&nbsp;₽</p>
+                </div>
+
+                <button type="button" class="card__button">В корзину</button>
+              </article>
+            </li>
+            <li class="goods__item">
+              <article class="goods__card card">
+                <a href="#" class="card__link">
+                  <img
+                    src="img/photo.jpeg"
+                    alt="Фото зимней экипировки"
+                    class="card__image"
+                /></a>
+                <button class="card__like-button" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="none"
+                  >
+                    <path fill="none" d="M0 0h16v16H0z" />
+                    <path
+                      fill="#FFF"
+                      d="M8.41 13.87c-.23.08-.6.08-.83 0-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08Z"
+                    />
+                    <path
+                      stroke="#1C1C1C"
+                      stroke-linejoin="round"
+                      d="M7.58 13.87c-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08-.23.08-.6.08-.83 0Z"
+                    />
+                  </svg>
+                </button>
+
+                <div class="card__info">
+                  <h3 class="card__info-title">Горные лыжи</h3>
+                  <p class="card__info-price">5&nbsp;000&nbsp;₽</p>
+                </div>
+
+                <button type="button" class="card__button">В корзину</button>
+              </article>
+            </li>
+            <li class="goods__item">
+              <article class="goods__card card">
+                <a href="#" class="card__link">
+                  <img
+                    src="img/photo.jpeg"
+                    alt="Фото зимней экипировки"
+                    class="card__image"
+                /></a>
+                <button class="card__like-button" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="none"
+                  >
+                    <path fill="none" d="M0 0h16v16H0z" />
+                    <path
+                      fill="#FFF"
+                      d="M8.41 13.87c-.23.08-.6.08-.83 0-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08Z"
+                    />
+                    <path
+                      stroke="#1C1C1C"
+                      stroke-linejoin="round"
+                      d="M7.58 13.87c-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08-.23.08-.6.08-.83 0Z"
+                    />
+                  </svg>
+                </button>
+
+                <div class="card__info">
+                  <h3 class="card__info-title">Горные лыжи</h3>
+                  <p class="card__info-price">5&nbsp;000&nbsp;₽</p>
+                </div>
+
+                <button type="button" class="card__button">В корзину</button>
+              </article>
+            </li>
+            <li class="goods__item">
+              <article class="goods__card card">
+                <a href="#" class="card__link">
+                  <img
+                    src="img/photo.jpeg"
+                    alt="Фото зимней экипировки"
+                    class="card__image"
+                /></a>
+                <button class="card__like-button" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="none"
+                  >
+                    <path fill="none" d="M0 0h16v16H0z" />
+                    <path
+                      fill="#FFF"
+                      d="M8.41 13.87c-.23.08-.6.08-.83 0-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08Z"
+                    />
+                    <path
+                      stroke="#1C1C1C"
+                      stroke-linejoin="round"
+                      d="M7.58 13.87c-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08-.23.08-.6.08-.83 0Z"
+                    />
+                  </svg>
+                </button>
+
+                <div class="card__info">
+                  <h3 class="card__info-title">Горные лыжи</h3>
+                  <p class="card__info-price">5&nbsp;000&nbsp;₽</p>
+                </div>
+
+                <button type="button" class="card__button">В корзину</button>
+              </article>
+            </li>
+            <li class="goods__item">
+              <article class="goods__card card">
+                <a href="#" class="card__link">
+                  <img
+                    src="img/photo.jpeg"
+                    alt="Фото зимней экипировки"
+                    class="card__image"
+                /></a>
+                <button class="card__like-button" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="none"
+                  >
+                    <path fill="none" d="M0 0h16v16H0z" />
+                    <path
+                      fill="#FFF"
+                      d="M8.41 13.87c-.23.08-.6.08-.83 0-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08Z"
+                    />
+                    <path
+                      stroke="#1C1C1C"
+                      stroke-linejoin="round"
+                      d="M7.58 13.87c-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08-.23.08-.6.08-.83 0Z"
+                    />
+                  </svg>
+                </button>
+
+                <div class="card__info">
+                  <h3 class="card__info-title">Горные лыжи</h3>
+                  <p class="card__info-price">5&nbsp;000&nbsp;₽</p>
+                </div>
+
+                <button type="button" class="card__button">В корзину</button>
+              </article>
+            </li>
+            <li class="goods__item">
+              <article class="goods__card card">
+                <a href="#" class="card__link">
+                  <img
+                    src="img/photo.jpeg"
+                    alt="Фото зимней экипировки"
+                    class="card__image"
+                /></a>
+                <button class="card__like-button" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="none"
+                  >
+                    <path fill="none" d="M0 0h16v16H0z" />
+                    <path
+                      fill="#FFF"
+                      d="M8.41 13.87c-.23.08-.6.08-.83 0-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08Z"
+                    />
+                    <path
+                      stroke="#1C1C1C"
+                      stroke-linejoin="round"
+                      d="M7.58 13.87c-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.7-3.73 1.22 0 2.29.59 2.96 1.49.68-.9 1.76-1.49 2.96-1.49 2.05 0 3.71 1.67 3.71 3.73 0 4.67-4.32 7.42-6.25 8.08-.23.08-.6.08-.83 0Z"
+                    />
+                  </svg>
+                </button>
+
+                <div class="card__info">
+                  <h3 class="card__info-title">Горные лыжи</h3>
+                  <p class="card__info-price">5&nbsp;000&nbsp;₽</p>
+                </div>
+
                 <button type="button" class="card__button">В корзину</button>
               </article>
             </li>
@@ -275,74 +690,109 @@
             </fieldset>
           </form>
         </div>
-      </section>
-      <section class="product">
-        <div class="container">
+      </section> -->
+      <!-- <section class="product">
+        <div class="container product__container">
           <h2 class="product__title">Горные лыжи</h2>
-          <div class="product__slider">
-            <div class="product__slider-image"></div>
-            <div class="product__slider-thumbnails"></div>
-          </div>
-          <div class="product__info">
-            <p class="product__info-price">5&nbsp;000&nbsp;₽</p>
-            <p class="product__info-id">арт. 84348945757</p>
-            <h3 class="product__info-title">Общие характеристики</h3>
-            <table class="product__info-table product__table">
-              <tr class="product__table-row">
-                <td class="product__table-item">Коллекция</td>
-                <td class="product__table-item">Snow</td>
-              </tr>
-              <tr class="product__table-row">
-                <td class="product__table-item">Производитель</td>
-                <td class="product__table-item">Россия</td>
-              </tr>
-              <tr class="product__table-row">
-                <td class="product__table-item">Гарантия</td>
-                <td class="product__table-item">18 мес.</td>
-              </tr>
-              <tr class="product__table-row">
-                <td class="product__table-item">Срок службы</td>
-                <td class="product__table-item">5 лет</td>
-              </tr>
-              <tr class="product__table-row">
-                <td class="product__table-item">Цвет</td>
-                <td class="product__table-item">Синий</td>
-              </tr>
-              <tr class="product__table-row">
-                <td class="product__table-item">Мккс. нагрузка</td>
-                <td class="product__table-item">130 кг.</td>
-              </tr>
-            </table>
-            <button type="button" class="product__button">В корзину</button>
-            <button type="button" class="product__like-button">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="none"
-              >
-                <rect
-                  width="15"
-                  height="15"
-                  fill="none"
-                  rx="0"
-                  transform="translate(.5 .5)"
-                />
-                <path
-                  fill="#FFF"
-                  d="M8.41 13.87c-.23.08-.6.08-.83 0-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.71-3.73 1.21 0 2.28.59 2.96 1.49.67-.9 1.75-1.49 2.96-1.49 2.04 0 3.7 1.67 3.7 3.73 0 4.67-4.32 7.42-6.25 8.08Z"
-                />
-                <path
-                  stroke="#1C1C1C"
-                  stroke-linejoin="round"
-                  d="M7.58 13.87c-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.71-3.73 1.21 0 2.28.59 2.96 1.49.67-.9 1.75-1.49 2.96-1.49 2.04 0 3.7 1.67 3.7 3.73 0 4.67-4.32 7.42-6.25 8.08-.23.08-.6.08-.83 0Z"
-                />
-              </svg>
-            </button>
+          <div class="product__description">
+            <div class="product__slider">
+              <img class="product__slider-image" src="img/photo-big.jpeg" />
+              <ul class="product__slider-thumbnails slider-thumbnails">
+                <li class="slider-thumbnails__item">
+                  <img
+                    src="img/photo-thumbnail.jpeg"
+                    alt=""
+                    class="slider-thumbnails__image"
+                  />
+                </li>
+                <li class="slider-thumbnails__item">
+                  <img
+                    src="img/photo-thumbnail.jpeg"
+                    alt=""
+                    class="slider-thumbnails__image"
+                  />
+                </li>
+                <li class="slider-thumbnails__item">
+                  <img
+                    src="img/photo-thumbnail.jpeg"
+                    alt=""
+                    class="slider-thumbnails__image"
+                  />
+                </li>
+                <li class="slider-thumbnails__item">
+                  <img
+                    src="img/photo-thumbnail.jpeg"
+                    alt=""
+                    class="slider-thumbnails__image"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="product__info">
+              <p class="product__info-price">5&nbsp;000&nbsp;₽</p>
+              <p class="product__info-id">арт. 84348945757</p>
+              <h3 class="product__info-title">Общие характеристики</h3>
+              <table class="product__info-table product__table">
+                <tr class="product__table-row">
+                  <td class="product__table-item">Коллекция</td>
+                  <td class="product__table-item">Snow</td>
+                </tr>
+                <tr class="product__table-row">
+                  <td class="product__table-item">Производитель</td>
+                  <td class="product__table-item">Россия</td>
+                </tr>
+                <tr class="product__table-row">
+                  <td class="product__table-item">Гарантия</td>
+                  <td class="product__table-item">18 мес.</td>
+                </tr>
+                <tr class="product__table-row">
+                  <td class="product__table-item">Срок службы</td>
+                  <td class="product__table-item">5 лет</td>
+                </tr>
+                <tr class="product__table-row">
+                  <td class="product__table-item">Цвет</td>
+                  <td class="product__table-item">Синий</td>
+                </tr>
+                <tr class="product__table-row">
+                  <td class="product__table-item">Мккс. нагрузка</td>
+                  <td class="product__table-item">130 кг.</td>
+                </tr>
+              </table>
+              <div class="info-buttons">
+                <button type="button" class="info-buttons__to-cart">
+                  В корзину
+                </button>
+                <button type="button" class="info-buttons__like">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="none"
+                  >
+                    <rect
+                      width="15"
+                      height="15"
+                      fill="none"
+                      rx="0"
+                      transform="translate(.5 .5)"
+                    />
+                    <path
+                      fill="#FFF"
+                      d="M8.41 13.87c-.23.08-.6.08-.83 0-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.71-3.73 1.21 0 2.28.59 2.96 1.49.67-.9 1.75-1.49 2.96-1.49 2.04 0 3.7 1.67 3.7 3.73 0 4.67-4.32 7.42-6.25 8.08Z"
+                    />
+                    <path
+                      stroke="#1C1C1C"
+                      stroke-linejoin="round"
+                      d="M7.58 13.87c-1.93-.66-6.25-3.41-6.25-8.08 0-2.06 1.66-3.73 3.71-3.73 1.21 0 2.28.59 2.96 1.49.67-.9 1.75-1.49 2.96-1.49 2.04 0 3.7 1.67 3.7 3.73 0 4.67-4.32 7.42-6.25 8.08-.23.08-.6.08-.83 0Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-
+      </section> -->
+      <!-- 
       <section class="cart">
         <div class="container">
           <h2 class="cart__title">Корзина</h2>
@@ -366,10 +816,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <section class="order">
-        <div class="container">
+        <div class="container order__container">
           <div class="order__wrapper">
             <div class="order__group">
               <h2 class="order__title">Заказ успешно размещен</h2>
@@ -413,11 +863,11 @@
             <a href="/" class="order__btn-link">На главную</a>
           </div>
         </div>
-      </section>
+      </section> 
     </main>
 
     <footer class="footer">
-      <div class="container">
+      <div class="container footer__container">
         <a href="/" class="footer__logo-link">
           <svg
             xmlns="http://www.w3.org/2000/svg"

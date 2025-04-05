@@ -1,0 +1,38 @@
+.catalog {
+  overflow: hidden;
+  padding-bottom: 20px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 32px;
+  }
+  @media (min-width: 1024px) {
+    padding-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 4px;
+  }
+  &__item {
+  }
+  &__link {
+    display: block;
+    background-color: #eeeff2;
+    color: #969eae;
+    padding: 11px 14px 13px;
+    border-radius: 32px;
+    align-items: center;
+    transition: color 0.2s;
+
+    &_active {
+      background-color: #0044f0;
+      color: #fff;
+    }
+
+    &:hover:not(&_active){
+      border: 1px solid #0044f0;
+      padding: 10px 13px 12px;
+      color: #0044f0;
+    }
+  }
+}

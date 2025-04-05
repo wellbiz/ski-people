@@ -23,6 +23,7 @@
     border-radius: 32px;
     align-items: center;
     transition: color 0.2s;
+    border: 1px solid #eeeff2;
 
     &_active {
       background-color: #0044f0;
@@ -31,7 +32,6 @@
 
     &:hover:not(&_active){
       border: 1px solid #0044f0;
-      padding: 10px 13px 12px;
       color: #0044f0;
     }
   }

@@ -135,6 +135,7 @@
 
   &__to-cart {
     background-color: var(--blue);
+    border: 1px solid var(--blue);
     color: var(--white);
     border: 1px solid transparent;
     border-radius: 32px;
@@ -144,9 +145,7 @@
     &:hover,
     &:active {
       background-color: var(--white);
-      border: 1px solid var(--blue);
       color: var(--blue);
-      padding: 11px 23px;
     }
   }
 
@@ -154,6 +153,7 @@
     align-self: center;
     flex-shrink: 0;
     transition: background-color 0.2s ease-in-out;
+    
     &:active {
       background-color: var(--blue);
     }
